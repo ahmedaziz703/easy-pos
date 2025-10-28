@@ -49,6 +49,7 @@ RUN composer install --no-interaction --ignore-platform-reqs --optimize-autoload
 RUN php artisan key:generate --force || true
 
 # 9️⃣ تثبيت حزم Node.js وVite وتجميع الأصول
+RUN apt-get install -y nodejs npm
 RUN npm install && npm run build
 
 # 🔟 فتح المنفذ
