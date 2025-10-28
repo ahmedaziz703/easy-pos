@@ -45,15 +45,14 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # 7️⃣ تثبيت تبعيات Laravel
 RUN composer install --no-interaction --ignore-platform-reqs --optimize-autoloader
 
-# 8️⃣ توليد مفتاح التطبيق
-RUN php artisan key:generate --force || true
-
-# 9️⃣ تثبيت حزم Node.js وVite وتجميع الأصول
-RUN apt-get install -y nodejs npm
+# 9️⃣ تثبيت حزم Node.js وVite وتجميع الأصول (CSS + JS)
 RUN npm install && npm run build
 
-# 🔟 فتح المنفذ
+# 🔟 تنظيف الملفات المؤقتة لتقليل حجم الصورة
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# 1️⃣1️⃣ فتح المنفذ
 EXPOSE 8000
 
-# 1️⃣1️⃣ تشغيل السيرفر فقط
+# 1️⃣2️⃣ تشغيل السيرفر Laravel
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
