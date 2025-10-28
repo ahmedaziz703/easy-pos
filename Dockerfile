@@ -1,5 +1,5 @@
 # =====================================================
-# 🐘 Laravel Easy-POS - Dockerfile (PHP 8.2-FPM + PostgreSQL + Storage + Vite)
+# 🐘 Laravel Easy-POS - Dockerfile (PHP 8.2 + PostgreSQL + Vite)
 # =====================================================
 
 FROM php:8.2-fpm
@@ -19,40 +19,35 @@ RUN apt-get update && apt-get install -y \
     g++ \
     make \
     pkg-config \
-    libcurl4-openssl-dev \
     nodejs \
     npm \
+    libcurl4-openssl-dev \
     && docker-php-ext-install pdo pdo_pgsql mbstring zip bcmath opcache intl
 
-# 2️⃣ إعداد مجلد العمل
+# 2️⃣ مجلد العمل
 WORKDIR /var/www/html
 
 # 3️⃣ نسخ ملفات المشروع
 COPY . .
 
-# 4️⃣ إعداد الصلاحيات للمجلدات المهمة
+# 4️⃣ صلاحيات المجلدات المهمة
 RUN chown -R www-data:www-data storage bootstrap/cache && \
     chmod -R 775 storage bootstrap/cache
 
-# 5️⃣ إنشاء مجلدات التخزين للصور وتفعيل الرابط
-RUN mkdir -p storage/app/public && \
-    mkdir -p public/storage && \
-    php artisan storage:link || true
-
-# 6️⃣ تثبيت Composer
+# 5️⃣ تثبيت Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# 7️⃣ تثبيت تبعيات Laravel
+# 6️⃣ تثبيت تبعيات Laravel
 RUN composer install --no-interaction --ignore-platform-reqs --optimize-autoloader
 
-# 9️⃣ تثبيت حزم Node.js وVite وتجميع الأصول (CSS + JS)
+# 7️⃣ تثبيت حزم Node.js وبناء Vite
 RUN npm install && npm run build
 
-# 🔟 تنظيف الملفات المؤقتة لتقليل حجم الصورة
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+# 8️⃣ ربط مجلد التخزين
+RUN php artisan storage:link || true
 
-# 1️⃣1️⃣ فتح المنفذ
+# 9️⃣ فتح المنفذ
 EXPOSE 8000
 
-# 1️⃣2️⃣ تشغيل السيرفر Laravel
+# 🔟 تشغيل السيرفر
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
