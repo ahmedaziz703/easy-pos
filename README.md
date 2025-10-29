@@ -23,7 +23,7 @@
 
 ## 🚀 العرض التجريبي:
 
-**عرض مباشر** : [https://easy-pos-qyvx.onrender.com/](https://easy-pos-qyvx.onrender.com/)
+**عرض مباشر** : [https://easy-pos-qyvx.onrender.com](https://easy-pos-qyvx.onrender.com)
 
 **اسم المستخدم:** [admin@admin.com](mailto:admin@admin.com)
 
