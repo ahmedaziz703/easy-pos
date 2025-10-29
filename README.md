@@ -53,7 +53,7 @@
 
 - 📩 تواصل معنا:
 - ✉️ البريد الإلكتروني: [ahmedzizz703@gmail.com](mailto:ahmedzizz703@gmail.com) 
-- 🌐 الموقع الإلكتروني: [wpdebuglog.com/contact/](https://wpdebuglog.com/contact)
+- 🌐 الموقع الإلكتروني: [https://ahmed-portfolio-dfu2.vercel.app](https://ahmed-portfolio-dfu2.vercel.app)
 
 تواصل معنا اليوم، ودعنا نتولى عملية الإعداد لك! 🚀
 
