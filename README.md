@@ -1,134 +1,126 @@
-<p align="center"><a href="#logo"><img src="https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/easy-pos-logo.svg" width="400" alt="Laravel POS Logo"></a></p>
+<p align="center"><a href="#logo"><img src="https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/easy-pos-logo.svg" width="400" alt="شعار Laravel POS"></a></p>
 
-A simple, open-source **Point of Sale (POS) system** built with Laravel and FilamentPHP.
-You can also use Laravel Easy POS as a lightweight and effective invoice generator for your services — not just products.
+نظام **نقطة بيع (POS) بسيط ومفتوح المصدر** تم بناؤه باستخدام Laravel و FilamentPHP.
+يمكنك أيضًا استخدام Laravel Easy POS كمولد فواتير فعال وخفيف لخدماتك — وليس فقط للمنتجات.
 
-It is ready with Filament v4. Please check it and feel free to share your feedback at info@mailmug.net
+النظام جاهز للعمل مع Filament v4. يمكنك تجربته ومشاركة ملاحظاتك على البريد: [info@mailmug.net](mailto:info@mailmug.net)
 
-[Version 1.2.0](https://github.com/mailmug/laravel-easy-pos/tree/v1.2.0)
+[الإصدار 1.2.0](https://github.com/mailmug/laravel-easy-pos/tree/v1.2.0)
 
-## Features 🛠️
-- ✅ Easy-to-use POS interface
-- ✅ Built with Laravel & FilamentPHP
-- ✅ Secure authentication & user management
-- ✅ Inventory & product management
-- ✅ Sales tracking & reports
-- ✅ Responsive UI
+---
 
-<br>
-<br>
+## المميزات 🛠️
 
-## 🚀 Demo Available:
-
-**Live Demo** : https://filament-pos.phpbolt.com/
-
-**Username:** admin@admin.com
-
-**Password:** pass@123
-<br>
-<br>
-
-**Demo Service Invoice:** [View Sample Invoice](https://comfort.phpbolt.com/invoice-001.pdf)
+* ✅ واجهة POS سهلة الاستخدام
+* ✅ مبني باستخدام Laravel و FilamentPHP
+* ✅ تسجيل دخول آمن وإدارة المستخدمين
+* ✅ إدارة المخزون والمنتجات
+* ✅ تتبع المبيعات وإعداد التقارير
+* ✅ واجهة متجاوبة مع الأجهزة المختلفة
 
 <br>
 <br>
 
-## ⭐ Show your support!
-If you find this project helpful, please consider giving it a star on GitHub
+## 🚀 العرض التجريبي:
+
+**عرض مباشر** : [https://easy-pos-qyvx.onrender.com/](https://easy-pos-qyvx.onrender.com/)
+
+**اسم المستخدم:** [admin@admin.com](mailto:admin@admin.com)
+
+**كلمة المرور:** pass@123 <br> <br>
+
+**فاتورة خدمة تجريبية:** [عرض نموذج الفاتورة](https://comfort.phpbolt.com/invoice-001.pdf)
+
+<br>
+<br>
+
+## ⭐ أظهر دعمك!
+
+إذا وجدت هذا المشروع مفيدًا، يرجى التفكير في منحه نجمة على GitHub
 
 <br>
 
-## Installation & Custom Invoice Template Service
+## التثبيت وخدمة تصميم فاتورة مخصصة
 
-We offer a hassle-free installation service for Laravel Easy POS for just **$29**. 
-Need a custom invoice template? We can design one for an additional price!
+نقدم خدمة تثبيت Laravel Easy POS بدون عناء مقابل **29 دولار فقط**.
+هل تحتاج إلى قالب فاتورة مخصص؟ يمكننا تصميمه بسعر إضافي!
 
-✅ **Services Offered:**
+✅ **الخدمات المتاحة:**
 
-- **Installation & Setup** – $29
-- **Custom Invoice Template** – Additional cost (contact us for pricing)
-- Configuration assistance & basic troubleshooting
+* **التثبيت والإعداد** – 29 دولار
+* **قالب فاتورة مخصص** – تكلفة إضافية (اتصل بنا لمعرفة السعر)
+* المساعدة في الإعداد وحل المشكلات الأساسية
 
-* 📩 Contact Us:
-* ✉️ Email: info@mailmug.net
-* 💬 Discord: arshidkv12
-* 🌐 Website: [wpdebuglog.com/contact/](https://wpdebuglog.com/contact/)
+- 📩 تواصل معنا:
+- ✉️ البريد الإلكتروني: [ahmedzizz703@gmail.com](mailto:ahmedzizz703@gmail.com)
+- 💬 ديسكورد: arshidkv12
+- 🌐 الموقع الإلكتروني: [wpdebuglog.com/contact/](https://wpdebuglog.com/contact/)
 
-Get in touch today, and let us handle the setup for you! 🚀
+تواصل معنا اليوم، ودعنا نتولى عملية الإعداد لك! 🚀
 
+---
 
-### **POS Interface**  
-![POS Interface](https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/public/img/laravel-easy-pos.png)  
+### **واجهة POS**
 
+![واجهة POS](https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/public/img/laravel-easy-pos.png)
 
-### **Invoice**  
+---
 
-It supports thermal printing.
+### **الفاتورة**
+
+النظام يدعم الطباعة الحرارية.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/public/img/invoice.png" alt="POS Invoice" style="border:1px solid #ddd">
+  <img src="https://raw.githubusercontent.com/mailmug/laravel-easy-pos/main/public/img/invoice.png" alt="فاتورة POS" style="border:1px solid #ddd">
 </p> 
 <br>
 <br>
 
-### 🛠️ How to Use as an Invoice Generator
+### 🛠️ كيفية استخدام النظام كمولد فواتير
 
-**Install the application**  
-Follow the standard installation process in the setup section.
+**تثبيت التطبيق**
+اتبع خطوات التثبيت العادية في قسم الإعدادات.
 
-**Add your services as “products”**  
-For example:
+**أضف خدماتك كـ “منتجات”**
+مثال:
 
-- **Service Name:** Deep Cleaning - 2BHK  
-- **Price:** 499  
-- **Description:** Full deep-clean for 2BHK apartment
+* **اسم الخدمة:** تنظيف عميق - شقة 2BHK
+* **السعر:** 499
+* **الوصف:** تنظيف كامل وشامل لشقة 2BHK
 
-**Create a new sale or transaction**
+**إنشاء عملية بيع أو معاملة جديدة**
 
-- Go to the POS dashboard  
-- Select the service (like “Deep Cleaning - 2BHK”)  
-- Enter quantity (usually 1)  
-- Add customer info if needed
+* اذهب إلى لوحة POS
+* اختر الخدمة (مثل “تنظيف عميق - شقة 2BHK”)
+* أدخل الكمية (عادة 1)
+* أضف معلومات العميل إذا لزم الأمر
 
-**Print or download the invoice**
+**طباعة أو تنزيل الفاتورة**
 
-- After checkout, you can **Print** the receipt  
-- Or use **PDF export** if integrated
+* بعد الدفع، يمكنك **طباعة** الإيصال
+* أو استخدام **تصدير PDF** إذا كان مدمجًا
 
+---
 
-## Installation Guide 🏗️
+## دليل التثبيت 🏗️
 
-### Web Install
-1. Download the zip file 
-https://filament-pos.phpbolt.com/laravel-easy-pos.zip
+### التثبيت المحلي
 
-2. Upload the file to **public_html** folder.
-
-Point the domain name to public_html/public folder.
-
-3. Edit `.env` file
-
-4. Navigate your-domain.com/install
-
-
-### Local Install
-
-1. **Clone the repository:**
+1. **استنساخ المستودع:**
 
 ```shell
 git clone https://github.com/mailmug/laravel-easy-pos.git
 cd laravel-easy-pos
-
 ```
-2. **Copy .env file**
+
+2. **نسخ ملف .env**
 
 ```shell
 cp .env.example .env
 php artisan key:generate
-
 ```
 
-3. **Update .env file**
+3. **تعديل ملف .env**
 
 ```shell
 DB_CONNECTION=mysql
@@ -136,10 +128,9 @@ DB_DATABASE=your_database
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 APP_URL=http://localhost
-
 ```
 
-4. **Install dependencies:**
+4. **تثبيت التبعيات:**
 
 ```shell
 composer install
@@ -147,36 +138,39 @@ npm install
 npm run build
 ```
 
-5. **Run the application:**
+5. **تشغيل التطبيق:**
 
 ```shell
 php artisan serve
 ```
 
-Navigate to the home page, and it will automatically add the demo data.
+انتقل إلى الصفحة الرئيسية، وسيتم إضافة البيانات التجريبية تلقائيًا.
 
-**Username:** admin@admin.com
+**اسم المستخدم:** [admin@admin.com](mailto:admin@admin.com)
+**كلمة المرور:** pass@123
 
-**Password:** pass@123
+✅ انتهى! لا تحتاج لأوامر إضافية. التثبيت تلقائي. 🎉
+تصفح الموقع واستمتع.
 
+---
 
-✅ That's it! No further commands needed. The installation is automatic. 🎉 
-Navigate the website. 
+## المساهمة 🤝
 
+نحن ❤️ للمساهمات! لا تتردد في تقديم مشكلات أو طلبات سحب.
 
-## Contribute 🤝
-We ❤️ contributions! Feel free to submit issues or pull requests.
+1. فرّع المستودع (Fork)
+2. أنشئ فرع جديد
+3. نفّذ التغييرات الخاصة بك
+4. افتح طلب سحب (Pull Request)
 
-1. Fork the repo
-2. Create a new branch
-3. Commit your changes
-4. Open a Pull Request
- 
+---
 
-## License 📜
-This project is licensed under the GPL-3.0 License.
+## الترخيص 📜
 
+هذا المشروع مرخص بموجب ترخيص GPL-3.0.
 
-**💡 Built with Laravel & FilamentPHP – Making POS Simple! 🚀**
+---
 
-Let me know if you want to add anything specific! 😃
+**💡 مبني باستخدام Laravel و FilamentPHP – لتبسيط نقاط البيع! 🚀**
+
+---
