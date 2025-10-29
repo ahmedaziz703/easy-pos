@@ -3,7 +3,7 @@
 نظام **نقطة بيع (POS) بسيط ومفتوح المصدر** تم بناؤه باستخدام Laravel و FilamentPHP.
 يمكنك أيضًا استخدام Laravel Easy POS كمولد فواتير فعال وخفيف لخدماتك — وليس فقط للمنتجات.
 
-النظام جاهز للعمل مع Filament v4. يمكنك تجربته ومشاركة ملاحظاتك على البريد: [info@mailmug.net](mailto:info@mailmug.net)
+النظام جاهز للعمل مع Filament v4. يمكنك تجربته ومشاركة ملاحظاتك على البريد: [ahmedzizz703@gmail.com](mailto:ahmedzizz703@gmail.com)
 
 [الإصدار 1.2.0](https://github.com/mailmug/laravel-easy-pos/tree/v1.2.0)
 
@@ -52,9 +52,8 @@
 * المساعدة في الإعداد وحل المشكلات الأساسية
 
 - 📩 تواصل معنا:
-- ✉️ البريد الإلكتروني: [ahmedzizz703@gmail.com](mailto:ahmedzizz703@gmail.com)
-- 💬 ديسكورد: arshidkv12
-- 🌐 الموقع الإلكتروني: [wpdebuglog.com/contact/](https://wpdebuglog.com/contact/)
+- ✉️ البريد الإلكتروني: [ahmedzizz703@gmail.com](mailto:ahmedzizz703@gmail.com) 
+- 🌐 الموقع الإلكتروني: [wpdebuglog.com/contact/](https://wpdebuglog.com/contact)
 
 تواصل معنا اليوم، ودعنا نتولى عملية الإعداد لك! 🚀
 
@@ -109,8 +108,8 @@
 1. **استنساخ المستودع:**
 
 ```shell
-git clone https://github.com/mailmug/laravel-easy-pos.git
-cd laravel-easy-pos
+git clone https://github.com/ahmedaziz703/easy-pos.git
+cd easy-pos
 ```
 
 2. **نسخ ملف .env**
