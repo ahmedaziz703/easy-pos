@@ -40,14 +40,14 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # 6️⃣ تثبيت تبعيات Laravel
 RUN composer install --no-interaction --ignore-platform-reqs --optimize-autoloader
 
-# 7️⃣ تثبيت حزم Node.js وبناء Vite
+# 7️⃣ تثبيت حزم Node.js وبناء ملفات Vite
 RUN npm install && npm run build
 
-# 8️⃣ ربط مجلد التخزين
+# 8️⃣ إنشاء رابط التخزين (Storage Link)
 RUN php artisan storage:link || true
 
-# 9️⃣ فتح المنفذ
+# 9️⃣ فتح المنفذ (Render يستخدم متغير PORT تلقائيًا)
 EXPOSE 8000
 
-# 🔟 تشغيل السيرفر
+# 🔟 تشغيل سيرفر Laravel فقط
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
