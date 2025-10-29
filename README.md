@@ -171,5 +171,3 @@ php artisan serve
 ---
 
 **💡 مبني باستخدام Laravel و FilamentPHP – لتبسيط نقاط البيع! 🚀**
-
----
